@@ -1,0 +1,18 @@
+<h1>Créateur d'onomatopées</h1>
+
+<form (ngSubmit)="onSubmit()">
+  <fieldset>
+    <label for="onomatopia">onomatopée</label>
+    <br />
+    <input
+      id="onomatopia"
+      name="onomatopia"
+      type="text"
+      [(ngModel)]="newOnomatopia"
+      required
+    />
+  </fieldset>
+  <button type="submit" (click)="sendOnomatopiaToParent()">
+    envoyer l'onomatopée
+  </button>
+</form>
